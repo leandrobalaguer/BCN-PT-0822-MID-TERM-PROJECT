@@ -1,4 +1,4 @@
-Technical Requirements
+Technical Requirements:
 Your website should be rendered in a browser.
 Include separate HTML / CSS / JavaScript files.
 Have a repo on GitHub.
