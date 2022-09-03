@@ -15,9 +15,8 @@ html{
 body{
 	min-height: 100%;
 	background-color: #e9e9e9;
-
 	font-weight: 300;
-    padding: 40px 60px;
+  
 }
 a{
 	text-decoration: none;
@@ -42,8 +41,8 @@ h3{
 }
 
 #container{
-	width: 80vw;
-    margin: 0 auto;
+	padding: 6% 0px;
+	margin: 0px 14%;
 
 }
 
@@ -97,7 +96,6 @@ footer{
 }
 .hero-content-l{
 	width: 50%;
-	padding: 70px;
 	text-align: left;
 }
 .hero-content-l p{
@@ -139,7 +137,7 @@ footer{
 
 }
 .trustee{
-	height: 22px;
+	height: 12%;
 
 }
 
@@ -162,11 +160,10 @@ footer{
 
 #projects{
 	display: flex;
-    flex-direction: row;
-    gap: 26px;
+	justify-content: space-evenly;
     height: 500px;
     flex-wrap: wrap;
-    justify-content: center;
+	gap: 5%;
 	margin-bottom: 200px;
 }
 
@@ -174,7 +171,7 @@ footer{
 	justify-content: space-evenly;
 	flex-wrap: nowrap;
 	background-color: white;
-	height: 340px;
+	height: 444px;
     box-shadow: 15px 25px 85px rgb(0 0 0 / 23%);
 }
 .recent .inside{
@@ -182,7 +179,8 @@ footer{
 }
 
 .recent img {
-	height: 180px;
+	height: 240px;
+	width: 340px;
 }
 
 .recent a{

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+
+}
+
+body{
+	font-family : 'Roboto', sans-serif;
+	min-height: 100vw;
+	font-weight: 300;
+	background:#e1e1e1;;
+}
+.navbar ul{
+	 display: flex;
+	 width: 100%;
+	 align-items: center;
+	 color:black;
+}
+
+.navbar li{
+	list-style-type: none;
+	padding: 1rem;
+}
+.navbar a{
+	text-decoration: none;
+}
+.navbar-logo{
+	flex:1;
+	font-size: 1.5rem;
+	user-select: none;
+}
+
+nav{
+	width: 90%;
+	margin: 0 auto;
+	height: 200px;
+
+	display: flex;
+}
+.navbar-toggle{
+	display: none;
+}
+
+.navbar-link a{
+	color:black;
+}
+.navbar-link:hover a{
+	background-color: #6b708D ;
+	padding: 10px 10px;
+	border-radius: 5px;
+}
+.navbar-link:hover a{
+	color:white ;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#container{
+	width: 90%;
+    margin: 0 auto;
+}
+
+#title-description{
+	width: 90%;
+	margin: 0 auto;
+	
+}
+#project-main{
+	width: 90%;
+	margin: 0 auto;
+	padding: 106px 0;
+	max-width: 2560px;
+	/*min-height: 100vh;*/
+	display: flex;
+	align-items: center;
+}
+
+#current-project{
+	width: 100%;
+	margin: 0 auto;
+}
+.projects-img{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	bottom: 2em;
+	box-shadow: -15px 0em 2em 0px rgb(249 161 59 / 33%), 
+	9px 13px 42px -13px rgb(110 0 231 / 77%);
+	
+}
+
+.projects-img{
+	width: 100%;
+}
+#other-projects{
+	width: 90%;
+	margin: 0 auto;
+	padding: 94px 0;
+	max-width: 2560px;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	gap:3em;
+	flex-wrap: wrap;
+	margin-bottom: 200px;
+
+}
+
+#project-item{
+	background: #f2f2f2;
+	padding-bottom: 4em;
+	flex-basis: 340px;
+	box-shadow: 29px 30px 80px -1px rgb(0 0 0 / 14%);
+}
+
+.project-content{
+	width: 100%;
+	margin: 0 auto;
+	
+}
+#project-picture{
+	
+	margin: 0 auto;
+	position: relative;
+	bottom: 4em;
+}
+.project-img{
+	padding-bottom: 2em;
+	width: 100%;
+	
+}
+.project-texts{
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 4em;
+}
+.project-title{
+	margin-bottom: 1em;
+}
+.project-desc{
+	
+}
+.title-solo{
+	padding-left: 40px;
+}
