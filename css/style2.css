@@ -154,3 +154,40 @@ nav{
 .title-solo{
 	padding-left: 40px;
 }
+
+#cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+	height: 500px;
+}
+.call-to {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+	background-color: #FFC600;
+    width: 100%;
+    padding: 100px;
+}
+.boton-gral {
+    width: 150px;
+    height: 52px;
+    background-color: #072AC8;
+    color: white;
+    border: none;
+    margin-right: 32px;
+}
+form input {
+    width: 340px;
+    border: none;
+}
+
+form {
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+}

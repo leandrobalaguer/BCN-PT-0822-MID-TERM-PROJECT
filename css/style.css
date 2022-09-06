@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -10,6 +9,8 @@
 html{
 	height: 100%;
 	font-family : 'Roboto', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 400;
 }
 
 body{
@@ -21,6 +22,26 @@ body{
 a{
 	text-decoration: none;
 	color: inherit;
+}
+.menu{
+	color: grey;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+ul li{
+	display: flex;
+	margin-right: 52px;
+}
+
+.active{
+	color: #072AC8;
+	font-weight: 600;
 }
 
 h1{
@@ -42,22 +63,14 @@ h3{
 
 #container{
 	padding: 6% 0px;
-	margin: 0px 14%;
-
 }
-
-/*.grid-container >*{
-	text-align: center; 
-	padding: 10px;
-
-}
-*/
 
 #navbar{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding-bottom: 100px;
+		margin: 0 10%;
 	  }
 
 
@@ -65,35 +78,41 @@ h3{
 	height: 18px;
   }
 
-#hero{
-	grid-area: hero;
-	grid-template-columns: 50% 50%;
-	height: 650px;
-
-}
-
-
-
-#services{
-	grid-area: services;
-	height: 561px;
-}
-#cta{
-	grid-area: cta;
-	height: 500px;
-	
-}
-footer{
-	grid-area: footer;
-	height: 242px;
-}
-
 #hero-content{
 	display: flex ;
 	flex-wrap: wrap;
 	align-items: center;
-	
+	height: 660px;
+	margin: 0 10%;
 }
+#hero-image-circle{
+	position:absolute;
+	z-index: -12;
+}
+
+.hero-content-r{
+	width: 50%;
+	position: relative;
+	display: flex;
+    align-items: center;
+  
+}
+#card1{
+    width: 70%;
+    position: absolute;
+    z-index: 4;
+    right: 307px;
+    bottom: -132px;
+
+}
+#card2{
+	width: 70%;
+    position: absolute;
+    z-index: 4;
+    top: 96px;
+    left: 313px;
+}
+
 .hero-content-l{
 	width: 50%;
 	text-align: left;
@@ -121,13 +140,7 @@ footer{
 	margin-right: 32px;
 	box-shadow:5px 5px 5px rgba(0,0,0,0.3);
 }
-.hero-content-r{
-	width: 50%;
-	justify-content: flex-end;
-}
-.hero-content-r img{
-	width: 100%;
-}
+
 
 #clients{
 	display: flex;
@@ -140,36 +153,26 @@ footer{
 	height: 12%;
 
 }
+.rellax{
+	display: flex;
 
+	z-index: -120;
+	}
 
 
 #cta{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	padding: 40px;
+	    margin: 0 4%;
 }
 
-.call-to{
-	background-color: #FFC600;
-    width: 100%;
-    padding: 100px;
-	
-}
 
 
 #projects{
-	display: flex;
-	justify-content: space-evenly;
-    height: 500px;
-    flex-wrap: wrap;
-	gap: 5%;
-	margin-bottom: 200px;
+	margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 200px;
 }
 
 .recent{
-	justify-content: space-evenly;
-	flex-wrap: nowrap;
 	background-color: white;
 	height: 444px;
     box-shadow: 15px 25px 85px rgb(0 0 0 / 23%);
@@ -189,8 +192,8 @@ footer{
 }
 .push{
 	display: flex;
-	width: 80vw;
-	justify-content: flex-start;
+	
+	justify-content: space-between;
 
 	}
 #testimonials{
@@ -198,6 +201,10 @@ footer{
 	height: 560px;
 	background-color: #292E47;
 	padding: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 200px;
+
 }
 
 .testimonials-inside{
@@ -217,15 +224,22 @@ blockquote{
 }
 
 #services{
+	margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 200px;
+    height: 561px;
+}
+
+.services-content{
+	padding-top: 60px;
 	display: flex;
-    padding-top: 200px;
-    gap: 26px;
-    text-align: left;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
+	gap:12px;
+
 }
 .services-inner{
-	width: 25%;
+	width: 340px;
+	height: 380px;
     padding: 60px 40px;
     background-color: white;
     box-shadow: 15px 25px 85px rgb(0 0 0 / 23%);
@@ -243,9 +257,18 @@ blockquote{
     flex-direction: column;
     align-content: center;
     align-items: center;
+	background-color: #FFC600;
+    width: 100%;
+	padding: 70px;
+	
 }
 
-
+.call-to .txt{
+	
+}
+.call-to .txt h2{
+	margin-bottom: 24px;
+}
 form{
 	display: flex;
     gap: 11px;
@@ -256,5 +279,13 @@ form{
 form input{
 	width: 340px;
     border: none;
+
+	outline: none;
 	
 }
+
+.menu{
+	display: flex;
+	justify-content: center;
+}
+

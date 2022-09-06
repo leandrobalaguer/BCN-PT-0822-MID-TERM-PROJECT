@@ -7,19 +7,24 @@
 	<link rel="stylesheet" href="css/style.css"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 	<title>Document</title>
 </head>
 <body>
 	<section id="container" class="grid-container">
 		<nav id="navbar">
 			<img class="logo" src="img/logo_circle.png">
-			<a href="#">Home</a>
-			<a href="projects.html">Projects</a>
-			<a href="#">Services</a>
+			<div class="menu">
+				<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="#">Services</a></li>
+		</ul>
+		</div>
 			<button class="boton-gral"><a href="contact.html">Contact Us</a></button>
 		</nav>
 		<section id="hero-content">
-			<div class="hero-content-l">
+			<div class="hero-content-l" data-rellax-speed="4">
 				<h1>Empower Your Business With Stunning Design!</h1>
 					<p class="regular">Circle is a digital design and development studio. 
 					We design and develop astonishing websites and mobile apps.</p>
@@ -27,7 +32,9 @@
 						<a href="projects.html">See our Work</a>
 			</div>
 			<div class="hero-content-r">
-				<img src="img/hero_image.png">
+				<img src="img/card-1.png" id="card1" class="rellax" data-rellax-speed="3" data-rellax-zindex="12">
+				<img src="img/card-2.png" id="card2" class="rellax" data-rellax-speed="0" data-rellax-zindex="12">
+				<img src="img/hero_image.png"id="hero-image-circle" class="rellax" data-rellax-speed="1" data-rellax-zindex="44">
 			</div>
 		</section>
 		<section id="clients">
@@ -38,7 +45,8 @@
 			<img class="trustee" src="img/logo_amazon.png">
 		</section>
 		<section id="projects">
-			<div class="push"><h2>Recent Projects</h2></div>
+			<h2>Recent Projects</h2>
+			<div class="push">
 			<div class="recent">
 				<img src="img/recent_project_1.png">
 				<div class="inside">
@@ -66,6 +74,7 @@
 				<a href="projects.html">Learn More</a>
 			</div>
 			</div>
+		</div>
 			</section>
 		<section id="testimonials">
 			<div class="testimonials-inside">
@@ -78,8 +87,10 @@
 			</div>
 
 		</section>
-		<h2>Our services</h2>
+		
 		<section id="services">
+			<h2>Our services</h2>
+			<div class="services-content">
 			
 			<div class="services-inner">
 				<img src="img/icon_1.png">
@@ -102,13 +113,15 @@
 				<br>
 				<a href="contact.html">Learn More</a>
 			</div>
-
+		</div>
 			
 		</section>
 		<section id="cta">
 			<div class="call-to">
+				<div class="call-to txt">
 				<h2>Do you have any questions?</h2>
 				<p>Let us help you!</p>
+			</div>
 				<form>
 				<input type="email" id="email" name="email">
 				<button class="boton-gral">Enviame!</button>
@@ -117,7 +130,12 @@
 			</div>
 		</section>
 	<footer>footer</footer>
-</section>
-	
+</section><script>
+	//default JS Setting
+	var rellax = new Rellax('.rellax', {
+	  center:true
+	});
+  </script>
+
 </body>
 </html>
