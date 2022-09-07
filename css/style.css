@@ -88,6 +88,7 @@ h3{
 #hero-image-circle{
 	position:absolute;
 	z-index: -12;
+	width: 100%;
 }
 
 .hero-content-r{
