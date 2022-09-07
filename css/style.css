@@ -11,6 +11,7 @@ html{
 	font-family : 'Roboto', sans-serif;
 	font-size: 1.1rem;
 	font-weight: 400;
+	
 }
 
 body{
@@ -62,7 +63,10 @@ h3{
 }
 
 #container{
-	padding: 6% 0px;
+	margin: 0 10%;
+	max-width: 80%;
+	padding-top: 4%;
+	padding-bottom: 8%;
 }
 
 #navbar{
@@ -70,7 +74,7 @@ h3{
 		justify-content: space-between;
 		align-items: center;
 		padding-bottom: 100px;
-		margin: 0 10%;
+		margin: 0 8%;
 	  }
 
 
@@ -83,7 +87,8 @@ h3{
 	flex-wrap: wrap;
 	align-items: center;
 	height: 660px;
-	margin: 0 10%;
+	margin: 0 8%;
+	justify-content: space-between;
 }
 #hero-image-circle{
 	position:absolute;
@@ -99,24 +104,29 @@ h3{
   
 }
 #card1{
-    width: 70%;
+    width: 60%;
     position: absolute;
     z-index: 4;
-    right: 307px;
-    bottom: -132px;
+    right: 353px;
+
+	filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 
 }
 #card2{
-	width: 70%;
+	width: 60%;
     position: absolute;
     z-index: 4;
-    top: 96px;
-    left: 313px;
+    top: 17px;
+    left: 390px;
+	filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 .hero-content-l{
-	width: 50%;
+	display: flex;
+	width: 40%;
 	text-align: left;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .hero-content-l p{
 	margin-bottom: 20px;
@@ -127,9 +137,7 @@ h3{
 	height: 52px;
 	background-color: #072AC8;
 	color:white;
-	border: none;
-	margin-right: 32px;
-	
+	border: none;	
 }
 
 .boton-gral-fancy{
@@ -145,7 +153,8 @@ h3{
 
 #clients{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	margin: 0px 8%;
 	padding: 142px 0px;
 	
 
@@ -165,14 +174,15 @@ h3{
 	    margin: 0 4%;
 }
 
-
-
 #projects{
 	margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 200px;
 }
 
+#projects h2{
+	margin-bottom: 100px;
+}
 .recent{
 	background-color: white;
 	height: 444px;
@@ -198,17 +208,21 @@ h3{
 
 	}
 #testimonials{
-	display: flex;
-	height: 560px;
-	background-color: #292E47;
-	padding: 20px;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom: 200px;
-
+	
+	background-image: url("memojis.png");
+	height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  background-position:center;
 }
 
 .testimonials-inside{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	flex-wrap: nowrap;
 
 }
 .memoji{
@@ -293,3 +307,18 @@ form input{
 .update{
 	
 }
+
+.memo-in{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tetimonial-txt{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
