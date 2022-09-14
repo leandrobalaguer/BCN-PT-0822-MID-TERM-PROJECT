@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="https://kit.fontawesome.com/4365553464.js" crossorigin="anonymous"></script>
-	<title>We are Circle || Contact </title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css" />
+	
+		<title>We are Circle || Home </title>
+		<meta name="description" content= "Circle is a digital design and development studio that provides you with stunning interface design, delivering the best user experience to your customers.We develop high-quality mobile and web applications using the latest technology.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+		<meta property="og:title" content="We are Circle!">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="">
+	  
+	  
+		<link rel="icon" href="img/icon.ico" sizes="any">
+		<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="img/icon.png">
+	</head>
 
 <body>
-	<section class="main">
+	<section id="main">
 		<section id="container">
 			<nav class="menu">
 				<label class="logo">
@@ -33,7 +44,7 @@
 				</span>
 			</nav>
 			<h1 class="contact-tit">Contact Us</h1>
-
+			<div id="status" class="status"></div>
 			<div id="contact">
 				<form id="formulario" method="post">
 					<ul>
@@ -61,7 +72,8 @@
 							<label for="msg">Message</label>
 							<li>
 								<textarea id="msg" name="user_message"
-									placeholder="Write your message here..."></textarea>
+									placeholder="Write your message here..."
+									minlength="50" required pattern="[A-Za-z0-9]+"></textarea>
 							</li>
 						</div>
 
@@ -102,6 +114,7 @@
 		</section>
 	</section>
 	<script src="js/main.js"></script>
+	<script src="https://kit.fontawesome.com/4365553464.js" crossorigin="anonymous"></script>
 
 	</section>
 </body>
