@@ -14,11 +14,10 @@
      max-width: 1442px;
      margin: 0 auto;
 }
- #container {
-     margin: 0 auto;
-}
+
  a {
      text-decoration: none;
+     color: grey;
 }
  #header {
      display: flex;
@@ -57,20 +56,22 @@
      list-style: none;
 }
  .menu_items li {
-     margin: 0 39px;
+     margin: 0 26px;
 }
- .menu_items li a:hover{
-     font-weight: 500;
-     color:#292e47;
-}
+ 
  .menu_items li a {
      padding: 7px 13px;
      text-decoration: none;
      display: block;
-     color: grey;
 }
- .menu a:active {
+.menu_items li a:hover{
+  font-weight: 600;
+  color:#292e47;
+ 
+}
+.on-it {
      color: #072ac8;
+     font-weight: 600;
 }
  .btn_menu {
      font-size: 25px;
@@ -178,6 +179,7 @@
      width: 100%;
      margin-left: 0;
      color: white;
+     cursor: pointer;
 }
  a .btn-up {
      color: white;
@@ -188,11 +190,15 @@
  @media (min-width: 320px) {
      #container {
          margin: 0 auto;
-         width: 80%;
+         width: 82%;
     }
      .logo {
          display: none;
     }
+    .menu_items li {
+      margin: 0 11px;
+      font-size: 1.1em;
+  }
      #hero {
          display: flex;
          flex-direction: column;
@@ -349,12 +355,9 @@
          background-color: #072ac8;
          color: white;
          border: none;
-    }
-     footer {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         font-size: 0.8em;
+         font-size: 1.1em;
+         cursor: pointer;
+         font-weight: 600;
     }
      .nav-down {
          padding-top: 4em;
@@ -457,15 +460,12 @@
      .btn-up {
          display: none;
     }
-     .menu_items li {
-         margin: 0;
-    }
      .title-hero {
          text-align: center;
     }
      #hero h1 {
-         font-size: 60px;
-         font-weight: 500;
+         font-size: 62px;
+         font-weight: 700;
          line-height: 1.1em;
          text-shadow: 0px 5px 5px rgba(23, 10, 6, 0.29);
          color: #292e47;
@@ -517,7 +517,7 @@
 
  @media (min-width: 1024px) {
      #container {
-         width: 80%;
+         width: 82%;
     }
      .mecagoentututamadre {
          text-align: left;
@@ -784,6 +784,7 @@
          font-size: 1.2em;
          color: grey;
          line-height: 1.2em;
+        
     }
      #contact .phone {
          display: block;
@@ -987,7 +988,7 @@
 }
  @media (min-width: 1500px) {
      #container {
-         width: 80%;
+         width: 82%;
          margin: 0 auto;
     }
      #card1 {
