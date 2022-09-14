@@ -141,6 +141,7 @@
      height: 140px;
      padding-top: 1em;
      background-color: #6b708d21;
+     margin-top: .5em;
 }
  .msg textarea:focus {
      border-color: none;
@@ -172,7 +173,7 @@
      align-items: center;
 }
  #btn-contact {
-     margin-top: 2em;
+     margin-top: 1.2em;
      background-color: #072ac8;
      border: none;
      padding: 1.6em;
@@ -797,6 +798,7 @@
          display: flex;
          flex-direction: column;
          align-items: flex-start;
+         justify-content: center;
     }
      footer .logo-down p {
          display: flex;
@@ -892,13 +894,12 @@
          box-shadow: -15px 0em 2em 0px rgb(249 161 59 / 33%), 9px 13px 42px -13px rgb(110 0 231 / 77%);
     }
      .contact-tit {
-         margin-top: 2em;
+         padding-top: 1.4em;
          color: #292e47;
          text-align: left;
-         font-size: 3em;
+         font-size: 3.4em;
     }
      #contact form {
-         padding-top: 4em;
          width: 100%;
     }
      #contact ul {
@@ -918,12 +919,13 @@
     }
      .title-current {
          text-align: left;
+         padding-top: 6em;
     }
      .details {
          display: flex;
          flex-direction: row;
          justify-content: space-between;
-         padding-bottom: 2em;
+         padding-bottom: 4em;
     }
      .title-current h1 {
          text-align: left;
