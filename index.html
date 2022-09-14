@@ -6,20 +6,32 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" />
-	<script src="https://kit.fontawesome.com/4365553464.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/tablet.css" />
+
 	<title>We are Circle || Home </title>
+	<meta name="description" content= "Circle is a digital design and development studio that provides you with stunning interface design, delivering the best user experience to your customers.We develop high-quality mobile and web applications using the latest technology.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<meta property="og:title" content="We are Circle!">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+  
+  
+	<link rel="icon" href="img/icon.ico" sizes="any">
+	<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="img/icon.png">
 </head>
 
 <body>
-	<section class="main">
+	<section id="main">
 		<section id="container">
 			<nav class="menu">
-				<label class="logo">
+				<figure class="logo">
 					<a href="index.html"><img src="img/logo_circle.png" alt="logo-company"></a>
-				</label>
+				</figure>
 				<ul class="menu_items">
-					<li>
-						<a href="#">Home</a>
+					<li >
+						<a class="active" href="#" >Home</a>
 					</li>
 					<li>
 						<a href="./projects.html">Projects</a>
@@ -32,15 +44,15 @@
 			</nav>
 			<section id="hero">
 				<div class="hero-content">
-					<div class="tit-her">
+					<div class="title-hero">
 						<h1>Empower Your Busines With Stunning Design!</h1>
 						<p>Circle is a digital design and development studio.
 							We design and develop astonishing websites and mobile apps.</p>
 					</div>
 					<div class="btn-hero">
-						<button class="boton-gral-fancy"><a href="contact.html">Get in touch!</a></button>
+						<button class="boton-gral-fancy"><a href="./contact.html">Get in touch!</a></button>
 					</div>
-					<div class="ourwork"><a href="projects.html">See our Work</a></div>
+					<div class="ourwork"><a href="./projects.html">See our Work</a></div>
 				</div>
 				<div class="hero-img">
 					<img src="img/card-1.png" id="card1" class="rellax" data-rellax-speed="4" data-rellax-zindex="12"
@@ -54,27 +66,27 @@
 
 			<section id="clients">
 				<div class="logo-client">
-					<img src="img/logo_airbnb.png" alt="logo-airbnb">
+					<figure><img src="img/logo_airbnb.png" alt="logo-airbnb"></figure>
 				</div>
 				<div class="logo-client">
-					<img src="img/logo_google.png" alt="logo-google">
+					<figure><img src="img/logo_google.png" alt="logo-google"></figure>
 				</div>
 				<div class="logo-client">
-					<img src="img/logo_microsoft.png" alt="logo-microsoft">
+					<figure><img src="img/logo_microsoft.png" alt="logo-microsoft"></figure>
 				</div>
 				<div class="logo-client">
-					<img src="img/logo_fedex.png" alt="logo-fedex">
+					<figure><img src="img/logo_fedex.png" alt="logo-fedex"></figure>
 				</div>
 				<div class="logo-client">
-					<img src="img/logo_amazon.png" alt="logo-amazon">
+					<figure><img src="img/logo_amazon.png" alt="logo-amazon"></figure>
 				</div>
-
 			</section>
+
 			<section id="projects">
 				<h2>Recent Projects</h2>
-				<div class="push">
+				<div class="projects-inside">
 					<div class="recent">
-						<img src="img/recent_project_1.png" alt="colorful-image-ui-design">
+						<figure><img src="img/recent_project_1.png" alt="colorful-image-ui-design"></figure>
 						<div class="recent-inside">
 							<h3>Simplify</h3>
 							<p>UI Design & App Development</p>
@@ -82,20 +94,18 @@
 						</div>
 					</div>
 					<div class="recent">
-						<img src="img/recent_project_2.png" alt="colorful-image-web-development">
+						<figure><img src="img/recent_project_2.png" alt="colorful-image-web-development"></figure>
 						<div class="recent-inside">
 							<h3>Dashcoin</h3>
 							<p>Web development</p>
-
 							<a href="projects.html">Learn More</a>
 						</div>
 					</div>
 					<div class="recent">
-						<img src="img/recent_project_3.png" alt="colorful-image-user-experience">
+						<figure><img src="img/recent_project_3.png" alt="colorful-image-user-experience"></figure>
 						<div class="recent-inside">
 							<h3>Vectorify</h3>
 							<p>User Experience design</p>
-
 							<a href="projects.html">Learn More</a>
 						</div>
 					</div>
@@ -192,6 +202,7 @@
 	</section>
 	<script src="js/main.js"></script>
 	<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+	<script src="https://kit.fontawesome.com/4365553464.js" crossorigin="anonymous"></script>
 	<script>
 		//default JS Setting
 		var rellax = new Rellax('.rellax', {
