@@ -14,7 +14,6 @@
      max-width: 1442px;
      margin: 0 auto;
 }
-
  a {
      text-decoration: none;
      color: grey;
@@ -784,7 +783,6 @@
          font-size: 1.2em;
          color: grey;
          line-height: 1.2em;
-        
     }
      #contact .phone {
          display: block;
