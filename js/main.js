@@ -1,5 +1,7 @@
 
 const form = document.querySelector('#formulario');
+
+
 form.addEventListener("submit", (event) => {
    event.preventDefault();
    console.log("TEST-CLICK")
@@ -27,9 +29,18 @@ const fetchParams = {
     },
     body: JSON.stringify({ item: datos })
  
-};
+}
 
-fetch(url, fetchParams);
-document.querySelector('#formulario').reset();
+fetch(url, fetchParams).then(response => response.json())
+.then(response => {
+    document.getElementById("status").innerHTML = "You ll hear from us soon ;)"; 
+    document.getElementById("status").classList.add('status-ok');
+    console.log(response);
+  })
+  .catch(err => {
+    document.getElementById("status").innerHTML = "Mm, something went wrong :/";
+    document.getElementById("status").classList.add('status-ko');
+    console.log(err);
+  });
+  document.querySelector('#formulario').reset();
 });
-
